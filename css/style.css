@@ -1,0 +1,588 @@
+/* =====================================
+   SmartBus - Bus Reservation System
+   Main CSS File
+   ===================================== */
+
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ==============================
+   Global CSS
+   ============================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f5f8ff;
+    color:#333;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+img{
+    max-width:100%;
+}
+
+
+/* ==============================
+   Common Container
+   ============================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+
+/* ==============================
+   Navbar
+   ============================== */
+
+.navbar{
+
+    width:100%;
+    background:#0d47a1;
+    padding:15px 0;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+
+.nav-container{
+
+    width:90%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+
+/* Logo */
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+    color:white;
+    font-size:24px;
+    font-weight:700;
+}
+
+
+.logo img{
+
+    width:45px;
+    height:45px;
+    object-fit:contain;
+}
+
+
+/* Menu */
+
+.nav-menu{
+
+    display:flex;
+    gap:25px;
+}
+
+
+.nav-menu a{
+
+    color:white;
+    font-size:15px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+
+.nav-menu a:hover{
+
+    color:#ffd54f;
+}
+
+
+
+/* ==============================
+   Buttons
+   ============================== */
+
+.btn{
+
+    display:inline-block;
+    padding:12px 25px;
+    background:#ff9800;
+    color:white;
+    border-radius:30px;
+    font-weight:600;
+    transition:0.3s;
+    border:none;
+    cursor:pointer;
+}
+
+
+.btn:hover{
+
+    background:#e68900;
+    transform:translateY(-3px);
+}
+
+
+
+.btn-primary{
+
+    background:#0d47a1;
+}
+
+
+.btn-primary:hover{
+
+    background:#08306b;
+}
+
+
+
+/* ==============================
+   Hero Section
+   ============================== */
+
+
+.hero{
+
+    min-height:550px;
+    display:flex;
+    align-items:center;
+    background:linear-gradient(
+        135deg,
+        #0d47a1,
+        #1976d2
+    );
+    color:white;
+}
+
+
+.hero-content{
+
+    width:600px;
+}
+
+
+.hero h1{
+
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+
+.hero p{
+
+    font-size:18px;
+    margin-bottom:30px;
+    line-height:1.7;
+}
+
+
+
+/* ==============================
+   Section Common
+   ============================== */
+
+
+.section{
+
+    padding:70px 0;
+}
+
+
+.section-title{
+
+    text-align:center;
+    margin-bottom:40px;
+}
+
+
+.section-title h2{
+
+    font-size:35px;
+    color:#0d47a1;
+}
+
+
+.section-title p{
+
+    color:#666;
+}
+
+
+
+/* ==============================
+   Cards
+   ============================== */
+
+
+.card-container{
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+}
+
+
+.card{
+
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+}
+
+
+.card h3{
+
+    color:#0d47a1;
+    margin-bottom:15px;
+}
+
+
+.card p{
+
+    color:#666;
+    line-height:1.6;
+}
+
+
+
+/* ==============================
+   Services
+   ============================== */
+
+
+.service-icon{
+
+    font-size:40px;
+    color:#ff9800;
+    margin-bottom:15px;
+}
+
+
+
+/* ==============================
+   Bus Cards
+   ============================== */
+
+
+.bus-card{
+
+    background:white;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+.bus-card h3{
+
+    color:#0d47a1;
+}
+
+
+.bus-info{
+
+    margin:15px 0;
+}
+
+
+.bus-info span{
+
+    display:block;
+    margin:8px 0;
+}
+
+
+
+/* ==============================
+   Forms
+   ============================== */
+
+
+.form-box{
+
+    width:450px;
+    max-width:100%;
+    background:white;
+    padding:35px;
+    margin:auto;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+
+.form-box h2{
+
+    text-align:center;
+    margin-bottom:25px;
+    color:#0d47a1;
+}
+
+
+
+.form-group{
+
+    margin-bottom:20px;
+}
+
+
+.form-group label{
+
+    display:block;
+    margin-bottom:8px;
+    font-weight:500;
+}
+
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+
+    width:100%;
+    padding:12px;
+
+    border:1px solid #ddd;
+    border-radius:8px;
+
+    outline:none;
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus{
+
+    border-color:#0d47a1;
+}
+
+
+
+/* ==============================
+   Booking Section
+   ============================== */
+
+   .seat-container{
+    display:grid;
+    grid-template-columns:repeat(4,60px);
+    gap:15px;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.seat{
+    width:60px;
+    height:60px;
+    background:#e5e7eb;
+    border:2px solid #2196f3;
+    border-radius:8px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.seat:hover{
+    background:#2196f3;
+    color:#fff;
+}
+
+.seat.selected{
+    background:#28a745;
+    color:#fff;
+}
+
+
+
+/* ==============================
+   Dashboard
+   ============================== */
+
+
+.dashboard-card{
+
+    background:white;
+    padding:25px;
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+    text-align:center;
+}
+
+
+.dashboard-card h2{
+
+    color:#0d47a1;
+}
+
+
+
+/* ==============================
+   Table
+   ============================== */
+
+
+.table-box{
+
+    overflow-x:auto;
+}
+
+
+table{
+
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+
+table th{
+
+    background:#0d47a1;
+    color:white;
+    padding:15px;
+}
+
+
+table td{
+
+    padding:12px;
+    border-bottom:1px solid #ddd;
+}
+
+
+
+/* ==============================
+   Contact
+   ============================== */
+
+
+.contact-box{
+
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+}
+
+
+.contact-card{
+
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+
+}
+
+
+
+/* ==============================
+   Developer Section
+   ============================== */
+
+
+.developer{
+
+    text-align:center;
+    background:#0d47a1;
+    color:white;
+    padding:40px;
+}
+
+
+.developer h3{
+
+    font-size:25px;
+}
+
+
+
+/* ==============================
+   Footer
+   ============================== */
+
+
+.footer{
+
+    background:#062b63;
+    color:white;
+    padding:25px 0;
+    text-align:center;
+}
+
+
+.footer p{
+
+    font-size:14px;
+}
+
+
+
+/* ==============================
+   Animation
+   ============================== */
+
+
+.fade{
+
+    animation:fade 1s ease;
+}
+
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}

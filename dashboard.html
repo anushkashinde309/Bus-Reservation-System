@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dashboard | SmartBus</title>
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+
+<!-- =========================
+     Navbar
+========================= -->
+
+
+<header class="navbar">
+
+<div class="nav-container">
+
+
+<a href="index.html" class="logo">
+
+<img src="images/logo.png" alt="SmartBus Logo">
+
+SmartBus
+
+</a>
+
+
+
+
+<nav>
+
+<ul class="nav-menu">
+
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+
+<li>
+<a href="buses.html">Buses</a>
+</li>
+
+
+<li>
+<a href="booking.html">Booking</a>
+</li>
+
+
+<li>
+<a href="mybookings.html">My Bookings</a>
+</li>
+
+
+<li>
+<a href="#" id="logoutBtn">Logout</a>
+</li>
+
+
+</ul>
+
+</nav>
+
+
+
+</div>
+
+</header>
+
+
+
+
+
+
+
+
+<!-- =========================
+     Dashboard Hero
+========================= -->
+
+
+<section class="hero">
+
+
+<div class="container">
+
+
+<div class="hero-content">
+
+
+<h1>
+Welcome To SmartBus Dashboard
+</h1>
+
+
+<p>
+Manage your profile and bus bookings easily.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =========================
+     Dashboard Cards
+========================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+
+<h2>
+Dashboard Overview
+</h2>
+
+
+</div>
+
+
+
+
+
+<div class="card-container">
+
+
+
+
+
+
+<div class="dashboard-card">
+
+
+<div class="service-icon">
+
+<i class="fa-solid fa-user"></i>
+
+</div>
+
+
+<h2 id="userName">
+User Name
+</h2>
+
+
+<p>
+Profile Information
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="dashboard-card">
+
+
+<div class="service-icon">
+
+<i class="fa-solid fa-ticket"></i>
+
+</div>
+
+
+<h2>
+0
+</h2>
+
+
+<p>
+Total Bookings
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="dashboard-card">
+
+
+<div class="service-icon">
+
+<i class="fa-solid fa-bus"></i>
+
+</div>
+
+
+<h2>
+Available
+</h2>
+
+
+<p>
+Bus Services
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =========================
+     Profile Section
+========================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="card">
+
+
+<h3>
+User Profile
+</h3>
+
+
+<br>
+
+
+<p>
+<strong>Name:</strong>
+<span id="profileName">
+Loading...
+</span>
+</p>
+
+
+<br>
+
+
+<p>
+<strong>Email:</strong>
+<span id="profileEmail">
+Loading...
+</span>
+</p>
+
+
+<br>
+
+
+<p>
+<strong>Account Type:</strong>
+Passenger
+</p>
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<!-- =========================
+     Quick Actions
+========================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+<h2>
+Quick Actions
+</h2>
+
+</div>
+
+
+
+
+
+<div class="card-container">
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Book New Ticket
+</h3>
+
+
+<p>
+Search available buses and reserve your seat.
+</p>
+
+
+<br>
+
+
+<a href="buses.html" class="btn">
+
+Book Now
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+View Bookings
+</h3>
+
+
+<p>
+Check your previous booking history.
+</p>
+
+
+<br>
+
+
+<a href="mybookings.html" class="btn">
+
+View
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+
+<div class="card">
+
+
+<h3>
+Contact Support
+</h3>
+
+
+<p>
+Get help from SmartBus support team.
+</p>
+
+
+<br>
+
+
+<a href="contact.html" class="btn">
+
+Contact
+
+</a>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =========================
+     Footer
+========================= -->
+
+
+<footer class="footer">
+
+
+<p>
+© 2026 SmartBus. All Rights Reserved.
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+
+<!-- Firebase JS -->
+
+<script type="module" src="js/firebase-config.js"></script>
+
+<script type="module" src="js/dashboard.js"></script>
+
+
+
+</body>
+
+</html>

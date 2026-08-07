@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Bookings | SmartBus</title>
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     Navbar
+========================= -->
+
+
+<header class="navbar">
+
+<div class="nav-container">
+
+
+<a href="index.html" class="logo">
+
+<img src="images/logo.png" alt="SmartBus Logo">
+
+SmartBus
+
+</a>
+
+
+
+<nav>
+
+<ul class="nav-menu">
+
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+
+<li>
+<a href="buses.html">Buses</a>
+</li>
+
+
+<li>
+<a href="booking.html">Booking</a>
+</li>
+
+
+<li>
+<a href="mybookings.html">My Bookings</a>
+</li>
+
+
+<li>
+<a href="dashboard.html">Dashboard</a>
+</li>
+
+
+<li>
+<a href="login.html">Logout</a>
+</li>
+
+
+</ul>
+
+</nav>
+
+
+</div>
+
+</header>
+
+
+
+
+
+
+
+<!-- =========================
+     Hero Section
+========================= -->
+
+
+<section class="hero">
+
+
+<div class="container">
+
+
+<div class="hero-content">
+
+
+<h1>
+My Bookings
+</h1>
+
+
+<p>
+View and manage your bus ticket bookings.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =========================
+     Booking History
+========================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="section-title">
+
+
+<h2>
+Booking History
+</h2>
+
+
+<p>
+Your previous and upcoming journeys
+</p>
+
+
+</div>
+
+
+
+
+
+
+
+
+<div class="table-box">
+
+
+<table>
+
+
+<thead>
+
+<tr>
+
+<th>
+Booking ID
+</th>
+
+<th>
+Bus Name
+</th>
+
+<th>
+Route
+</th>
+
+<th>
+Date
+</th>
+
+<th>
+Seat
+</th>
+
+<th>
+Fare
+</th>
+
+<th>
+Status
+</th>
+
+<th>
+Action
+</th>
+
+</tr>
+
+</thead>
+
+
+
+<tbody id="bookingTable">
+
+
+<tr>
+
+
+<td>
+SB1024
+</td>
+
+
+<td>
+Shivneri Bus
+</td>
+
+
+<td>
+Kolhapur - Pune
+</td>
+
+
+<td>
+10/08/2026
+</td>
+
+
+<td>
+A5
+</td>
+
+
+<td>
+₹600
+</td>
+
+
+<td>
+Confirmed
+</td>
+
+
+<td>
+
+
+<button class="btn">
+
+Cancel
+
+</button>
+
+
+</td>
+
+
+</tr>
+
+
+
+
+
+
+<tr>
+
+
+<td>
+SB1025
+</td>
+
+
+<td>
+MSRTC Express
+</td>
+
+
+<td>
+Pune - Mumbai
+</td>
+
+
+<td>
+15/08/2026
+</td>
+
+
+<td>
+B2
+</td>
+
+
+<td>
+₹450
+</td>
+
+
+<td>
+Confirmed
+</td>
+
+
+<td>
+
+
+<button class="btn">
+
+Cancel
+
+</button>
+
+
+</td>
+
+
+</tr>
+
+
+
+</tbody>
+
+
+
+</table>
+
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =========================
+     Ticket Section
+========================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+<div class="card">
+
+
+<h3>
+Download Ticket
+</h3>
+
+
+<p>
+Download your confirmed ticket after successful booking.
+</p>
+
+
+
+<button class="btn">
+
+<i class="fa-solid fa-download"></i>
+
+Download Ticket
+
+</button>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+     Footer
+========================= -->
+
+
+<footer class="footer">
+
+
+<p>
+© 2026 SmartBus. All Rights Reserved.
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<!-- JavaScript -->
+
+<script type="module" src="js/dashboard.js"></script>
+
+
+</body>
+
+</html>

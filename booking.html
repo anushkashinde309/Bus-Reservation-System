@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Bus Booking | SmartBus</title>
+
+
+<!-- CSS -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/responsive.css">
+
+
+<!-- Font Awesome -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     Navbar
+========================= -->
+
+
+<header class="navbar">
+
+<div class="nav-container">
+
+
+<a href="index.html" class="logo">
+
+<img src="images/logo.png" alt="SmartBus Logo">
+
+SmartBus
+
+</a>
+
+
+
+<nav>
+
+<ul class="nav-menu">
+
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+
+<li>
+<a href="about.html">About</a>
+</li>
+
+
+<li>
+<a href="services.html">Services</a>
+</li>
+
+
+<li>
+<a href="buses.html">Buses</a>
+</li>
+
+
+<li>
+<a href="mybookings.html">My Bookings</a>
+</li>
+
+
+<li>
+<a href="login.html">Login</a>
+</li>
+
+
+</ul>
+
+</nav>
+
+
+</div>
+
+</header>
+
+
+
+
+
+
+
+<!-- =========================
+     Booking Hero
+========================= -->
+
+
+<section class="hero">
+
+
+<div class="container">
+
+
+<div class="hero-content">
+
+
+<h1>
+Book Your Bus Ticket
+</h1>
+
+
+<p>
+Select your seat and complete your booking.
+</p>
+
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =========================
+     Booking Section
+========================= -->
+
+
+<section class="section">
+
+
+<div class="container">
+
+
+
+<div class="section-title">
+
+
+<h2>
+Select Seat
+</h2>
+
+
+<p>
+Choose your preferred seat
+</p>
+
+
+</div>
+
+
+
+
+
+
+<!-- Seat Layout -->
+
+
+<div class="card">
+
+
+<h3>
+Bus Seat Layout
+</h3>
+
+
+<br>
+
+
+<div class="seat-container">
+
+
+<div class="seat">1</div>
+<div class="seat">2</div>
+<div class="seat">3</div>
+<div class="seat">4</div>
+
+<div class="seat">5</div>
+<div class="seat">6</div>
+<div class="seat">7</div>
+<div class="seat">8</div>
+
+<div class="seat">9</div>
+<div class="seat">10</div>
+<div class="seat">11</div>
+<div class="seat">12</div>
+
+<div class="seat">13</div>
+<div class="seat">14</div>
+<div class="seat">15</div>
+<div class="seat">16</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- Passenger Form -->
+
+
+<div class="form-box">
+
+
+<h2>
+Passenger Details
+</h2>
+
+
+
+<form id="bookingForm">
+
+
+
+<div class="form-group">
+
+<label>
+Full Name
+</label>
+
+<input type="text"
+id="passengerName"
+placeholder="Enter Name"
+required>
+
+</div>
+
+
+
+
+
+<div class="form-group">
+
+<label>
+Mobile Number
+</label>
+
+<input type="number"
+id="mobile"
+placeholder="Enter Mobile Number"
+required>
+
+</div>
+
+
+
+
+
+
+<div class="form-group">
+
+<label>
+Email
+</label>
+
+<input type="email"
+id="email"
+placeholder="Enter Email">
+
+</div>
+
+
+
+
+
+
+<div class="form-group">
+
+<label>
+Journey Date
+</label>
+
+<input type="date"
+id="journeyDate"
+required>
+
+</div>
+
+
+
+
+
+
+
+<div class="form-group">
+
+<label>
+Selected Seat
+</label>
+
+<input type="text"
+id="selectedSeat"
+placeholder="Select Seat"
+readonly>
+
+</div>
+
+
+
+
+
+
+
+<div class="form-group">
+
+<label>
+Total Fare
+</label>
+
+<input type="text"
+id="fare"
+value="₹450"
+readonly>
+
+</div>
+
+
+
+
+
+
+<button type="submit" class="btn">
+
+Confirm Booking
+
+</button>
+
+
+
+</form>
+
+
+</div>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<!-- =========================
+     Footer
+========================= -->
+
+
+<footer class="footer">
+
+
+<p>
+© 2026 SmartBus. All Rights Reserved.
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<!-- JavaScript -->
+
+<script type="module" src="js/booking.js"></script>
+
+
+</body>
+
+</html>

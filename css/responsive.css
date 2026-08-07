@@ -1,0 +1,312 @@
+/* =====================================
+   SmartBus - Responsive CSS
+   Mobile & Tablet Design
+   ===================================== */
+
+
+/* ==============================
+   Tablet Devices
+   (Max Width 992px)
+   ============================== */
+
+
+@media(max-width:992px){
+
+
+    .nav-container{
+
+        flex-direction:column;
+        gap:15px;
+
+    }
+
+
+    .nav-menu{
+
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+
+    }
+
+
+
+    .hero{
+
+        text-align:center;
+        padding:50px 0;
+
+    }
+
+
+    .hero-content{
+
+        width:100%;
+
+    }
+
+
+    .hero h1{
+
+        font-size:38px;
+
+    }
+
+
+    .section{
+
+        padding:50px 0;
+
+    }
+
+
+    .card-container{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+
+}
+
+
+
+/* ==============================
+   Mobile Devices
+   (Max Width 600px)
+   ============================== */
+
+
+@media(max-width:600px){
+
+
+    .container{
+
+        width:95%;
+
+    }
+
+
+
+    /* Navbar */
+
+
+    .navbar{
+
+        padding:12px 0;
+
+    }
+
+
+    .logo{
+
+        font-size:20px;
+
+    }
+
+
+    .logo img{
+
+        width:35px;
+        height:35px;
+
+    }
+
+
+
+    .nav-menu{
+
+        flex-direction:column;
+        align-items:center;
+        gap:12px;
+
+    }
+
+
+
+    /* Hero */
+
+
+    .hero{
+
+        min-height:450px;
+
+    }
+
+
+    .hero h1{
+
+        font-size:30px;
+
+    }
+
+
+    .hero p{
+
+        font-size:15px;
+
+    }
+
+
+
+    /* Buttons */
+
+
+    .btn{
+
+        padding:10px 20px;
+
+    }
+
+
+
+    /* Sections */
+
+
+    .section-title h2{
+
+        font-size:28px;
+
+    }
+
+
+
+    /* Cards */
+
+
+    .card-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .card{
+
+        padding:20px;
+
+    }
+
+
+
+    /* Forms */
+
+
+    .form-box{
+
+        padding:25px;
+
+    }
+
+
+
+    .form-box h2{
+
+        font-size:24px;
+
+    }
+
+
+
+    /* Booking Seats */
+
+
+    .seat-container{
+
+        grid-template-columns:
+        repeat(3,45px);
+
+        justify-content:center;
+
+    }
+
+
+    .seat{
+
+        width:45px;
+        height:45px;
+
+    }
+
+
+
+    /* Dashboard */
+
+
+    .dashboard-card{
+
+        padding:20px;
+
+    }
+
+
+
+    /* Tables */
+
+
+    table{
+
+        min-width:600px;
+
+    }
+
+
+
+    /* Contact */
+
+
+    .contact-box{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    /* Footer */
+
+
+    .footer p{
+
+        font-size:12px;
+
+    }
+
+
+}
+
+
+
+/* ==============================
+   Small Mobile
+   (Max Width 400px)
+   ============================== */
+
+
+@media(max-width:400px){
+
+
+    .hero h1{
+
+        font-size:25px;
+
+    }
+
+
+    .nav-menu a{
+
+        font-size:14px;
+
+    }
+
+
+    .seat-container{
+
+        grid-template-columns:
+        repeat(2,45px);
+
+    }
+
+
+}
